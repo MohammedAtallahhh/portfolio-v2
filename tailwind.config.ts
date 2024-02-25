@@ -1,32 +1,6 @@
 import type { Config } from "tailwindcss";
 
 const colors = require("tailwindcss/colors");
-// const typographyPlugin = require("@tailwindcss/typography");
-
-// const inflatePlugin = function ({ addComponents, theme, variants, e }: any) {
-//   const spacing = theme("spacing", {});
-
-//   Object.entries(spacing).forEach(([name, padding]) => {
-//     addComponents(
-//       {
-//         [`.${e(`inflate-${name}`)} > *`]: { padding },
-//         [`.${e(`inflate-x-${name}`)} > *`]: {
-//           paddingLeft: padding,
-//           paddingRight: padding,
-//           "&:first-child": { paddingLeft: 0 },
-//           "&:last-child": { paddingRight: 0 },
-//         },
-//         [`.${e(`inflate-y-${name}`)} > *`]: {
-//           paddingTop: padding,
-//           paddingBottom: padding,
-//           "&:first-child": { paddingTop: 0 },
-//           "&:last-child": { paddingBottom: 0 },
-//         },
-//       },
-//       variants("inflate", ["responsive"])
-//     );
-//   });
-// };
 
 const config: Config = {
   content: [
@@ -60,6 +34,5 @@ const config: Config = {
       },
     },
   },
-  // plugins: [inflatePlugin, typographyPlugin],
 };
 export default config;
