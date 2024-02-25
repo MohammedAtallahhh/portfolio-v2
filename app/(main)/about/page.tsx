@@ -2,6 +2,7 @@ import Image from "next/image";
 import React from "react";
 
 import profile from "@/public/profile.png";
+import FadedImage from "@/components/ui/FadedImage";
 
 const AboutPage = () => {
   return (
@@ -14,13 +15,10 @@ const AboutPage = () => {
           </h2>
         </div>
         <div className="max-w-[350px] sm:min-w-[250px]">
-          <Image
-            src={profile}
-            className="rounded-2xl w-full border-2 border-imgborder bg-cover"
-            width={1000}
-            height={800}
-            alt="Portrait of Mohammad Atallah"
-            priority
+          <FadedImage
+            src={profile.src}
+            width={profile.width}
+            height={profile.height}
           />
         </div>
       </header>
